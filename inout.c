@@ -4,8 +4,9 @@
 #include "common.h"
 
 void enter_count(int *c) {
-	printf("Please enter number of students: ");
+	printf("Please enter number of students: \n");
 	scanf(" %d", c);
+	printf("\n");
 }
 
 
@@ -17,9 +18,10 @@ void data_input(int count, student_type *s){
 		return;
 	}
 	for (int i=0; i < count; i++){
-		printf("Please enter data for Student %d:\n", i+1);
+		printf("Please enter data for Student %d: \n", i+1);
 		scanf("%s %s %d %d", (s+i)->name, (s+i)->lastname,
 					 &(s+i)->group_id, &(s+i)->course);
+		printf("\n");
 	}
 	return;
 }
