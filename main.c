@@ -20,8 +20,9 @@ int main(){
 	student_type *data;
 	int err = 0;
 	
-	printf("Do you want to see existing student data (1/0)?\n");
+	printf("Do you want to see existing student data (1/0)? \n");
 	scanf("%d", &yn);
+	printf("\n");
 	if (yn==1){
 	    data = data_read(file, &c);
 	    if	(!data) {
@@ -37,8 +38,9 @@ int main(){
 	data_input(c, s);
 	data_output(c, s);
 	
-	printf("Do you want to save the data(1/0)?");
+	printf("Do you want to save the data(1/0)?\n");
 	scanf("%d", &yn);
+	printf("\n");
 	if (yn == 1){
 		printf("saving data to %s ----\n", file);
 		err = data_save(c, s, file);
