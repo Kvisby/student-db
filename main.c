@@ -26,11 +26,12 @@ int main(){
 	if (yn==1){
 	    data = data_read(file, &c);
 	    if	(!data) {
-			printf("Error reading Database: (%m)\n");
+			printf("Error reading Database !\n");
 		}  else	{
 			printf("There are %d students in database: \n", c);
 			data_output (c, data);
 			free(data);
+	
 		}
 	}
 	enter_count(&c);

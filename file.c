@@ -47,7 +47,7 @@ student_type *data_read(const char *file, int *count_return){
   
 	fd = open(file, O_RDWR, 0600);
 	if (fd<0){
-		printf("Error opening file: %d ($m)\n", fd);
+		printf("Error opening file: %d \n", fd);
 		return data;
 	} else {
 		printf("File descriptor is %d \n", fd);
